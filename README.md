@@ -21,7 +21,6 @@ A simple Node.js + Express API that predicts gender based on a given name using 
 - TypeScript
 - Axios
 
-
 ---
 
 ## 📡 API Endpoint
@@ -35,13 +34,14 @@ Classifies a name using an external prediction service.
 ## 🔎 Query Parameters
 
 | Parameter | Type   | Required | Description      |
-|----------|--------|----------|------------------|
-| name     | string | Yes      | Name to classify |
+| --------- | ------ | -------- | ---------------- |
+| name      | string | Yes      | Name to classify |
 
 ---
 
 ## 📌 Example Request
-GET http://localhost:5000/classify?name=john
+
+GET <http://localhost:5000/classify?name=john>
 
 ---
 
@@ -60,6 +60,7 @@ GET http://localhost:5000/classify?name=john
   }
 }
 ```
+
 ---
 
 ## ❌ Error Responses
@@ -71,8 +72,8 @@ GET http://localhost:5000/classify?name=john
   "status": "error",
   "message": "Name parameter is not found"
 }
-
 ```
+
 ## 422 — Invalid Query Type
 
 ```json
@@ -80,8 +81,8 @@ GET http://localhost:5000/classify?name=john
   "status": "error",
   "message": "Query parameter cannot be processed"
 }
-
 ```
+
 ## 404 — No Prediction Found
 
 ```json
@@ -99,3 +100,4 @@ GET http://localhost:5000/classify?name=john
   "status": "error",
   "message": "Internal server error"
 }
+```
