@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
 
 app.use("/api/classify", classifyRoute);
 
-app.listen(PORT, () => {
-  console.log(`Classify server running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Classify server running on http://localhost:${PORT}`);
+// });
 
 export default app;
