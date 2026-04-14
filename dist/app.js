@@ -12,13 +12,13 @@ const app = (0, express_1.default)();
 const PORT = process.env.PORT || 5000;
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express_1.default.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
-    res.send("REQUEST CHECK");
+    res.send("API IS LIVE");
 });
 app.use("/api/classify", classify_route_1.default);
-app.listen(PORT, () => {
-    console.log(`Classify server running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Classify server running on http://localhost:${PORT}`);
+// });
 exports.default = app;
 //# sourceMappingURL=app.js.map
