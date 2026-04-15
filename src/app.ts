@@ -3,7 +3,7 @@ dotenv.config();
 
 import express, { Application } from "express";
 import cors from "cors";
-import classifyRoute from "../src/routes/classify.route";
+import classifyRoute from "./routes/classify.route";
 
 const app: Application = express();
 const PORT = parseInt(process.env.PORT || "5000", 10);
