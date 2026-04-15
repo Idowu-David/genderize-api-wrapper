@@ -2,7 +2,7 @@
   "name": "genderize-api-wrapper",
   "version": "1.0.0",
   "description": "A backend API that classifies names by gender using an external service, with custom data processing and validation.",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "dev": "nodemon src/app.ts",
     "build": "tsc",
