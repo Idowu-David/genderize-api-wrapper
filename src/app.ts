@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/classify", classifyRoute);
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// app.listen(PORT, "0.0.0.0", () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
 export default app;
