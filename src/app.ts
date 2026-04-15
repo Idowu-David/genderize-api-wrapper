@@ -6,7 +6,7 @@ import cors from "cors";
 import classifyRoute from "./routes/classify.route";
 
 const app: Application = express();
-const PORT = parseInt(process.env.PORT || "3000", 10); // ← changed to 3000 to match pxxl config
+const PORT = parseInt(process.env.PORT || "3000", 10);
 
 app.use(cors());
 app.use(express.json());
