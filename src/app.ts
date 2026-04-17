@@ -9,8 +9,9 @@ const app: Application = express();
 const PORT = parseInt(process.env.PORT || "3000", 10);
 
 app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+
 
 app.get("/", (req, res) => {
   res.send("API IS LIVE");
